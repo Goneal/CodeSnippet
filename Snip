@@ -1,0 +1,69 @@
+
+
+-REACT NATIVE
+import React from 'react';
+import {Text, View} from 'react-native';
+import {Header} from './Header';
+import {heading} from './Typography';
+
+const WelcomeScreen = () => (
+  <View>
+    <Header title="Welcome to React Native"/>
+    <Text style={heading}>Step One</Text>
+    <Text>
+      Edit App.js to change this screen and turn it
+      into your app.
+    </Text>
+    <Text style={heading}>See Your Changes</Text>
+    <Text>
+      Press Cmd + R inside the simulator to reload
+      your app’s code.
+    </Text>
+    <Text style={heading}>Debug</Text>
+    <Text>
+      Press Cmd + M or Shake your device to open the
+      React Native Debug Menu.
+    </Text>
+    <Text style={heading}>Learn</Text>
+    <Text>
+      Read the docs to discover what to do next:
+    </Text>
+   </View>
+);
+
+iOS 
+override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //This acesses the persistence container from anywhere in the app
+        (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+
+        investView.layer.cornerRadius = 12.0
+        recentView.layer.cornerRadius = 12
+        feedView.layer.cornerRadius = 12
+        
+        someArrow1.transform = someArrow1.transform.rotated(by: .pi * 3.0)
+        someArrow2.transform = someArrow2.transform.rotated(by: .pi * 3.0)
+        
+        previousPoints.delegate = self
+        previousPoints.dataSource = self
+        previousPoints.backgroundColor = .white
+
+    }
+    
+    Android
+ 
+    class MainActivity : ComponentActivity() {
+override fun onCreate (savedInstanceState: Bundle?) {
+super.onCreate(savedInstanceState)o
+setContent < -
+Greeting (name = "Android")
+Nullability in the type system helps prevent NullPointExceptions
+Semicolons are optional
+Lambdas allow you to pass code to a function as a parameter
+Named parameters make code easier to read
+@Composable
+fun Greeting(name: String) {
+Text ("Hello Sname!"
+}
+
